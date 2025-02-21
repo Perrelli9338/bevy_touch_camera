@@ -165,10 +165,10 @@ fn touch_pan_zoom(
     {
         if tracker.gesture_type == GestureType::None {
             tracker.camera_start_pos = transform.translation;
-            tracker.time_start_touch = time.elapsed_seconds();
+            tracker.time_start_touch = time.elapsed_secs();
         }
         tracker.gesture_type = GestureType::Pan;
-        let time_since_start = time.elapsed_seconds() - tracker.time_start_touch;
+        let time_since_start = time.elapsed_secs() - tracker.time_start_touch;
         if time_since_start < config.touch_time_min {
             return;
         }

@@ -2,7 +2,7 @@
 
 [package]
 name = "bevy_touch_camera"
-version = "0.1.2"
+version = "0.1.3"
 edition = "2021"
 authors = ["Dorian Bucur <dorian.bucur@outlook.com>"]
 description = "Touch camera for Bevy that supports drag and pinch to zoom"
@@ -15,10 +15,10 @@ categories = ["game-development"]
 exclude = ["assets/*"]
 
 [dependencies]
-bevy = { version = "0.14.2", default-features = false }
+bevy = { version = "0.15.2", default-features = false }
 
 [dev-dependencies.bevy]
-version = "0.14.2"
+version = "0.15.2"
 default-features = false
 features = [
     "bevy_core_pipeline",
